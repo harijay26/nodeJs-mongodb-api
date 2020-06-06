@@ -1,0 +1,8 @@
+
+# donenv file
+.env
+
+## Package
+node_modules
+
+package-lock.json
