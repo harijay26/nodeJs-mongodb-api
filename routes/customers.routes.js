@@ -9,9 +9,7 @@ router.get('/', async (req, res) => {
     try {
         const customers = await Customer.find()
         res.json(customers)
-        //res.send(customers)
-        console.log(customers)
-        //res.json({ message: "i am meant to display all the customers..." });
+        
     } catch (err) {
         res.status(500).json({ message: err.message })
     }
