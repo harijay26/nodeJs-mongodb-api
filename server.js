@@ -14,7 +14,7 @@ db.once('open', () => console.log('connected to database'));
 app.use(express.json())
 
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to Harry APIs application...In the URL attach /customers to fetch and /customers/:id(preferred to get a single customer. Enjoy!!)" });
+    res.json({ message: "Welcome to Harry APIs application...In the URL attach /customers to fetch and /customers/:id(preferred ID to get a single customer). Enjoy!!)" });
     
 });
 
