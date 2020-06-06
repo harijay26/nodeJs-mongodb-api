@@ -13,6 +13,11 @@ db.once('open', () => console.log('connected to database'));
 // Setting up our server to accept JSON using a middleware
 app.use(express.json())
 
+app.get("/", (req, res) => {
+    //res.json({ message: "Welcome to Harry application..." });
+    res.send({ message: "Welcome to Harry Nosql application..." });
+});
+
 // Routes
 const customersRouter = require('./routes/customers.routes')
 app.use('/customers', customersRouter )
