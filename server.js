@@ -14,8 +14,8 @@ db.once('open', () => console.log('connected to database'));
 app.use(express.json())
 
 app.get("/", (req, res) => {
-    //res.json({ message: "Welcome to Harry application..." });
-    res.send({ message: "Welcome to Harry Nosql application..." });
+    res.json({ message: "Welcome to Harry application..." });
+    //res.send({ message: "Welcome to Harry Nosql application..." });
 });
 
 // Routes
